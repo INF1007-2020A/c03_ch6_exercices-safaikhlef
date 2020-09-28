@@ -5,19 +5,21 @@
 def order(values: list = None) -> bool:
     if values is None:
         # TODO: Demander les valeurs ici
-        ma_liste = [] 
-        while len(ma_liste) < 10:
-            ma_liste.append(int(input("Veuillez entrer un nombre entier : ")))
+        pass
+    
+     ma_liste = [] 
+     while len(ma_liste) < 10:
+         ma_liste.append(int(input("Veuillez entrer un nombre entier : ")))
       
         
-        resultat = True
-        index = 0
-        while index < len(ma_liste) - 1:
-            if ma_liste[index] > ma_liste[index+1]:
-                resultat = False
-                break
-            index += 1  
-        print(resultat)
+     resultat = True
+     index = 0
+     while index < len(ma_liste) - 1:
+         if ma_liste[index] > ma_liste[index+1]:
+              resultat = False
+              break
+         index += 1  
+     print(resultat)
         
         
        # print(ma_liste == sorted(ma_liste))
@@ -30,6 +32,22 @@ def anagrams(words: list = None) -> bool:
     if words is None:
         # TODO: Demander les mots ici
         pass
+    
+    mot1 = 'ALEVIN'
+    mot2 = 'NIVELA'
+    mot1 = list(mot1)
+    mot2 = liste(mot2)
+    
+    if len(mot1) == len(mot2):
+        for lettre in mot1:
+            if lettre in mot2:
+                mot2.remove(lettre)
+        if len(mot2) == 0:
+            print('Anagramme')
+        else:
+            print('raté')
+            
+    #print(sorted(mot1) == sorted(mot2))
 
     return False
 
