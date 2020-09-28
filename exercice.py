@@ -5,8 +5,24 @@
 def order(values: list = None) -> bool:
     if values is None:
         # TODO: Demander les valeurs ici
-        pass
-
+        ma_liste = [] 
+        while len(ma_liste) < 10:
+            ma_liste.append(int(input("Veuillez entrer un nombre entier : ")))
+      
+        
+        resultat = True
+        index = 0
+        while index < len(ma_liste) - 1:
+            if ma_liste[index] > ma_liste[index+1]:
+                resultat = False
+                break
+            index += 1  
+        print(resultat)
+        
+        
+       # print(ma_liste == sorted(ma_liste))
+                
+           
     return False
 
 
