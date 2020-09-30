@@ -53,7 +53,8 @@ def anagrams(words: list = None) -> bool:
 
 
 def contains_doubles(items: list) -> bool:
-    return False
+    print(set(liste))
+    print(len(Liste) == len(set(liste)))
 
 
 def best_grades(student_grades: dict) -> dict:
@@ -66,6 +67,21 @@ def histogram(sentence: str) -> tuple:
     #       Afficher l'histogramme et les lettres les plus fréquentes
     #       Retourner l'histogramme et le tableau de lettres
 
+    phrase = "Bonjour, c'est mercredi."
+    
+    phrase_set = set(phrase)
+    resultat = {}
+    for lettre in phrase_set:
+        resultat[lettre] = phrase.count(lettre)
+    
+    #print(resultat)
+    
+   # resultat = {}
+    #for lettre in phrase:
+      #  if lettre not in resultat:
+       #     resultat[lettre] = 0
+       # else:
+        #    resultat[lettre] += 1
     return {}, []
 
 
